@@ -3,14 +3,14 @@ pipeline {
   agent {
     node {
       // The entire job will run on one specific node
-      label 'nonexistent-label'
+      label 'build-game-linux-git-dynamic'
     }
   }
 
   stages {
     stage('Test') {
       steps {
-        sh "echo hello 4"
+        sh "echo hello 5"
       }
     }
   }
